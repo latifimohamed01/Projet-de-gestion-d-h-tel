@@ -1,11 +1,20 @@
+# 🏨 Hotel Property Management System (PMS)
+
+A comprehensive Hotel Property Management System designed to simplify hotel operations and improve the experience of both customers and hotel staff. The platform consists of a Flutter mobile application for clients, a React-based web dashboard for hotel staff, and a Node.js/Express backend API.
+
+## 📁 Project Structure
+
+```text
 PMS/
-├── pms-mobile/                 ← Application mobile Flutter (Client)
+│
+├── pms-mobile/                 # Flutter Mobile Application (Client)
 │   ├── lib/
 │   │   ├── core/
 │   │   ├── data/
 │   │   └── presentation/
 │   └── pubspec.yaml
-├── pms-web/                    ← Tableaux de bord web React
+│
+├── pms-web/                    # React Web Dashboard (Hotel Staff)
 │   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
@@ -14,7 +23,8 @@ PMS/
 │   │   │   └── receptionist/
 │   │   └── services/
 │   └── package.json
-├── pms-backend/                ← API Node.js + Express
+│
+├── pms-backend/                # Node.js + Express REST API
 │   ├── src/
 │   │   ├── controllers/
 │   │   ├── models/
@@ -23,53 +33,75 @@ PMS/
 │   │   └── config/
 │   ├── .env
 │   └── package.json
+│
 └── database/
     └── schema.sql
+```
 
----
+## 📱 Mobile Application – Client
 
-## 🖥 Écrans de l'application
+The mobile application provides customers with an intuitive interface to explore rooms, manage their profiles, and make reservations.
 
-### Mobile (Client)
-| Écran | Description |
+| Screen | Description |
 |---|---|
-| Connexion | Authentification par email / mot de passe |
-| Inscription | Création de compte (nom, prénom, email, téléphone, mot de passe) |
-| Découvrir | Catégories de chambres et chambres les mieux notées |
-| Détails de la chambre | Photos, description, prix, capacité, bouton de réservation |
-| Mes réservations | Liste des réservations du client |
-| Profil | Informations personnelles et actions |
-| Modifier mon profil | Mise à jour du nom, de l'email, du téléphone et de la photo |
+| Login | User authentication using email and password. |
+| Registration | Account creation with personal information, including name, email, phone number, and password. |
+| Discover | Browse room categories and explore top-rated rooms. |
+| Room Details | View room photos, descriptions, prices, capacity, and reservation options. |
+| My Reservations | View and manage personal reservations. |
+| Profile | Display personal information and account actions. |
+| Edit Profile | Update name, email, phone number, and profile picture. |
 
-### Web (Personnel)
-| Écran | Rôle | Description |
-|---|---|---|
-| Connexion du personnel | Tout le personnel | Authentification par email / mot de passe |
-| Vérification du code | Tout le personnel | Code à 6 chiffres reçu par email |
-| Nouveau mot de passe | Tout le personnel | Réinitialisation du mot de passe |
-| Tableau de bord administrateur | Admin | Chambres, réservations, occupation, revenus |
-| Gestion des utilisateurs | Admin | Tableau des utilisateurs avec modification / suppression |
-| Liste des chambres / Ajouter une chambre | Admin | CRUD complet des chambres |
-| Problèmes | Admin | Problèmes signalés |
-| Employés | Gestionnaire | Employés et salaires |
-| Planning | Gestionnaire | Planification sous forme de calendrier |
-| Budget | Gestionnaire | Synthèse financière |
-| Ajouter une réservation | Réceptionniste | Formulaire de réservation avec calcul du prix |
-| Liste des réservations | Réceptionniste | Consultation / modification / annulation |
-| Programme des employés | Réceptionniste | Horaires du personnel |
+## 🖥️ Web Application – Hotel Staff
 
----
+The web dashboard provides role-based access to hotel staff, allowing administrators, managers, and receptionists to manage daily hotel operations.
 
-## 🔮 Perspectives
+### 🔐 Authentication (All Staff)
 
-- Intégration avec des services externes (calendriers, messageries)
-- Analyses et rapports avancés
-- Système d'avis et de retours clients
-- Intégration d'une passerelle de paiement en ligne
-- Prise en charge multilingue (arabe / français / anglais)
+| Screen | Description |
+|---|---|
+| Staff Login | Authentication using email and password. |
+| Code Verification | Verify identity using a six-digit code sent by email. |
+| New Password | Reset the account password. |
 
----
+### 👨‍💻 Administrator Dashboard
 
-## 📄 Licence
+| Screen | Description |
+|---|---|
+| Dashboard | Overview of rooms, reservations, occupancy rates, and revenue. |
+| User Management | View, edit, and delete user accounts. |
+| Room Management | Complete room management with CRUD operations. |
+| Reported Issues | View and manage problems reported within the hotel. |
 
-Ce projet a été développé à des fins académiques.
+### 👔 Manager Dashboard
+
+| Screen | Description |
+|---|---|
+| Employees | Manage employee information and salaries. |
+| Schedule | Organize employee schedules using a calendar. |
+| Budget | Monitor and review hotel financial information. |
+
+### 🛎️ Receptionist Dashboard
+
+| Screen | Description |
+|---|---|
+| Add Reservation | Create reservations with automatic price calculation. |
+| Reservations List | View, update, and cancel reservations. |
+| Employee Schedule | Consult staff working schedules. |
+
+## 🔮 Future Improvements
+
+The following features are planned as potential future enhancements:
+
+- Integration with external services, including calendars and messaging platforms.
+- Advanced analytics and reporting tools.
+- Customer reviews and feedback management.
+- Online payment gateway integration.
+- Multilingual support (Arabic, French, and English).
+
+## 🛠️ Technologies Used
+
+- **Mobile:** Flutter & Dart
+- **Frontend:** React.js
+- **Backend:** Node.js & Express.js
+- **Database:** SQL-based database (see `database/schema.sql`).
