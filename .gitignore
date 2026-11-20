@@ -1,0 +1,69 @@
+
+# =================================
+# FLUTTER / DART (Mobile App)
+# =================================
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# =================================
+# REACT / VITE (Frontend)
+# =================================
+node_modules/
+dist/
+.vite/
+coverage/
+
+# =================================
+# EXPRESS / NODE.JS (Backend)
+# =================================
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# =================================
+# ENVIRONMENT VARIABLES
+# =================================
+.env
+.env.*
+!.env.example
+
+# =================================
+# EDITORS
+# =================================
+.vscode/
+.idea/
+
+# =================================
+# OPERATING SYSTEM
+# =================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =================================
+# TEMPORARY FILES
+# =================================
+*.tmp
+*.bak
